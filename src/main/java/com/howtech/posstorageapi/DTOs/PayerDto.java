@@ -6,14 +6,10 @@ import lombok.Data;
  * @author Maurice Kelly
  */
 @Data
-public class CompanyDto {
+public class PayerDto {
     private String name;
     private String email;
-    private String ein;
-    private String industry;
-    private String url_description;
     private String phoneNumber;
-    private String vat_no;
     private String billing_line1;
     private String billing_line2;
     private String billing_city;
@@ -23,5 +19,12 @@ public class CompanyDto {
 
     private String accountNo;
     private String routingNo;
+
+    private Long cardNumber;
+    private int expiryMonth;
+    private int expiryYear;
+    private int cvc;
+
+    private String pay_processor_id;
 
 }

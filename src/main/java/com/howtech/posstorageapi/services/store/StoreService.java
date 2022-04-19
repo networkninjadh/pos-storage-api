@@ -16,10 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.howtech.DTOs.CompanyDto;
-import com.howtech.DTOs.HoursDto;
-import com.howtech.DTOs.PayerDto;
-import com.howtech.DTOs.StoreDto;
 import com.howtech.exceptions.CustomerNotFoundException;
 import com.howtech.exceptions.QueueFullException;
 import com.howtech.exceptions.StoreNotFoundException;
