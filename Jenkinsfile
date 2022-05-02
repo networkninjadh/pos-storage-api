@@ -36,7 +36,7 @@ pipeline {
         stage('package') {
             steps {
                 sh 'mvn clean package'
-                sh 'docker build -t pos-storage-api .'
+                sh 'docker build -t networkninjadh/pos-storage-api .'
                 sh 'echo $dockerhub_PSW | docker login -u $dockerhub_USR --password-stdin'
                 sh 'docker push networkninjadh/pos-storage-api:latest'
             }
