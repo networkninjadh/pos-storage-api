@@ -1,0 +1,6 @@
+spring:
+  properties:
+    aws:
+      bucketName:
+      accessKey:
+      secretKey:
