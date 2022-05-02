@@ -2,6 +2,9 @@ pipeline {
 
     agent any
 
+    environment {
+        dockerhub=credentials('dockerhub')
+    }
     stages {
 
         stage('Initialize') {
